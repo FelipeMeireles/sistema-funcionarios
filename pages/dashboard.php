@@ -1,7 +1,7 @@
 <?php
 // Página inicial após login
 include 'config.php';
-if (!isset($SESSION['user'])) {
+if (!isset($_SESSION['user'])) {
     header("Location: login.php");
     exit;
 }
